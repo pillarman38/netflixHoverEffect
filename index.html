@@ -43,6 +43,25 @@
         filter: brightness(50%);
         transition: filter 0.5s;
     }
+    #container:not(hover) #txt {
+        position: absolute;
+        color: orange;
+        transition: opacity 0.5s;
+        z-index: 1;
+
+    }
+    #container:not(hover) #image{
+        filter: brightness(100%);
+        transition: filter 0.5s;
+    }
+
+    #container:not( :hover ) {
+        width: 200px;
+        height: 300px;
+        display: inline-block;
+        border: 10px solid black;
+        transition: width 0.5s, height 0.5s;
+    }
 
 </style>
 </head>
